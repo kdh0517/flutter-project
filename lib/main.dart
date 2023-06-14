@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
   bool get isStreaming => subscription != null;
 
   Future<void> _startScan(BuildContext context) async {
-    // check if "can" startScan
+     // check if "can" startScan
     if (shouldCheckCan) {
       // check if can-startScan
       final can = await WiFiScan.instance.canStartScan();
